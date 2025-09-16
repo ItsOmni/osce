@@ -1,13 +1,70 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OSCE Masterclass – Interactive E‑learning</title>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>An Introduction to OSCEs – Interactive E-learning</title>
+    <meta
+      name="description"
+      content="An Introduction to OSCEs — a practical, friendly e-learning by Dr Hussain Hilali with timed drills, checklists, and a downloadable certificate."
+    />
+
+    <!-- PWA / Theming (optional but nice) -->
+    <meta name="theme-color" content="#0f172a" />
+
+    <!-- Open Graph (link previews: WhatsApp, Facebook, Slack, etc.) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="An Introduction to OSCEs – Interactive E-learning" />
+    <meta
+      property="og:description"
+      content="Practical OSCE prep with timed stations, mark-scheme checklists, and a certificate at the end."
+    />
+    <!-- If you add a preview image later, place it in /public and update this path -->
+    <meta property="og:image" content="/social-card.png" />
+    <meta property="og:url" content="/" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="An Introduction to OSCEs – Interactive E-learning" />
+    <meta
+      name="twitter:description"
+      content="Practical OSCE prep with timed stations, checklists, and a downloadable certificate."
+    />
+    <meta name="twitter:image" content="/social-card.png" />
+
+    <!-- Icons (optional) -->
+    <!-- <link rel="icon" href="/favicon.ico" sizes="any" /> -->
+    <!-- <link rel="icon" href="/icon.svg" type="image/svg+xml" /> -->
+    <!-- <link rel="apple-touch-icon" href="/apple-touch-icon.png" /> -->
+    <!-- <link rel="manifest" href="/site.webmanifest" /> -->
+
+    <!-- Tailwind via CDN (fast and simple). Remove if you use a compiled Tailwind setup. -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Preflight tweak (optional): improve font rendering a bit -->
+    <style>
+      html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+      body { background: #ffffff; color: #0f172a; }
+    </style>
   </head>
+
   <body>
-    <div id="root"></div>
+    <!-- App Root -->
+    <div id="root" class="min-h-screen"></div>
+
+    <!-- Vite Entry -->
+    <!-- If your entry file is JS, use /src/main.jsx instead -->
     <script type="module" src="/src/main.tsx"></script>
+
+    <!-- Noscript message (optional) -->
+    <noscript>
+      <div style="padding:1rem; font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Inter, Helvetica, Arial, sans-serif;">
+        This course requires JavaScript. Please enable it to continue.
+      </div>
+    </noscript>
   </body>
 </html>
